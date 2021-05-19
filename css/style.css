@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&display=swap');
+
+/* reset css for home */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* common style */
+body{	
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 14px;
+	color:#242424;
+	background-color:#f0f3f6;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:800;
+	display:block;
+}
+h1{
+	font-size:35px;
+}
+h2{
+	font-size:21px;
+	line-height:25px;
+}
+h3{
+	font-size:18px;
+}
+h4{
+	font-size:15px;
+}
+p{
+	font-size:15px;
+	line-height: 20px;
+}
+a{
+	transition:0.3s ease;
+}
+
+body{	
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 14px;
+	color:#242424;
+	background-color:#f0f3f6;
+}
+
+section{
+    padding: 30px 0;
+}
+
+.banner-section{
+	background-image:url("../images/banner.jpg");
+	background-size: cover;
+	min-height: 450px;
+	position: relative;
+}
+
+.feature img{
+	width:100%;
+}
+.no-padding{
+	padding:0;
+}
+.info-text{
+	color: #fff;
+	text-align: center;
+	 margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 38%;
+}
+
+.info-section {
+    padding: 30px 20px;
+}
+.form-container{
+	width: 50%;
+    margin: 0 auto;
+    border: solid 1px black;
+    padding: 34px;
+}
+.form-label{
+	margin-bottom:5px;
+}
+.action{ 
+    padding: 15px;
+}
+.validation-error{
+	color:red;
+	display: none;
+	margin-top: 5px;
+}
+
+.input-error{
+	 border: solid 1px red;
+}
+#alert{
+	display:none;
+}
+.music{
+	float:right;
+}
+@media only screen and (max-width: 768px) {
+ .form-container {
+    width: 100%;
+    padding: 34px 0;
+}
+.form-area{
+	padding-left:0;
+	padding-right:0;
+}
+.music{
+	float:left;
+	    margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-width: 450px) {
+.info-text {
+    left: 3%;
+}
+}
+
+@media screen and (max-width: 768px) and (min-width: 450px) {
+	.info-text {
+    left: 17%;
+}
+}
